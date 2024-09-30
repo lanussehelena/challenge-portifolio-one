@@ -2,7 +2,10 @@
 :root {
     --cor-de-fundo: #F5F5F5;
     --cor-de-fundo-menu: #ffffff;
+    --cor-de-fundo_destaque: #EAF2FD;
     --cor-do-link: #000000;
+    --cor-texto: #464646;
+    --cor-botao: #2A7AE4;
 }
 
 body {
@@ -12,6 +15,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+    color: var(--cor-texto);
 }
 
 ol, ul, li {
@@ -28,8 +32,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    background-color: var(--cor-de-fundo-menu);
+    padding: 0 9.375rem;
+    background-color: var(--cor-de-fundo_destaque);
+    align-items: center;
 }
 
 .cabecalho__logo {
@@ -50,23 +55,195 @@ a {
 }
 /* ------------------------------ Seção Apresentação ------------------------------*/
 
+.apresentacao {
+    display: flex;
+    margin: 2rem 9.375rem;
+}
+
+.apresentacao__titulo {
+    font-size: 3.25rem;
+}
+
+.apresentacao__subtitulo {
+    font-size: 1.375rem;
+}
+
+.redes {
+    display: flex;
+    gap: 2rem;
+}
+
+.redes__elemento {
+    font-size: 1rem;
+}
+
+.apresentacao__foto {
+    max-width:368px;
+    max-height:368px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
 
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
 
+.sobre-mim {
+    background-color: var(--cor-de-fundo_destaque);
+    padding: 3.75rem 9.375rem;
+}
 
-/*------------------------------ Seção de Habilidades ------------------------------*/
+.sobre-mim__titulo {
+    font-size: 2rem;
+}
 
+.sobre-mim__texto {
+    font-size: 1rem;
+}
 
-/*------------------------------ Seção de Hobbies --------------------------------*/
+/*------------------------------ Seção de Habilidades  e  Seção de Hobbies------------------------------*/
+.habilidades, .hobbies {
+    padding: 1rem 9.375rem 2rem 9.375rem;
+}
 
+.habilidades__titulo, .hobbies__titulo, .formacao__titulo {
+    text-align: center;
+    font-size: 2rem;
+}
 
-/*------------------------------ Seção de Projetos --------------------------------*/
+.habilidades__lista, .hobbies__lista {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
 
+.habilidades__elemento, .hobbies__elemento {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo-menu);
+    width: 176px;
+    height: 174px;
+    align-items: baseline;
+    justify-content: end;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+/*------------------------------ Formação acadêmica --------------------------------*/
+
+.formacao {
+    background-color: var(--cor-de-fundo_destaque);
+    padding: 5.125rem 9.375rem;
+}
+
+.formacao__lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formacao__icone {
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.formacao__nome {
+    font-size: 1.375rem;
+    margin: 0;
+}
+
+.formacao__detalhe {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/*------------------------------ Seção de Experiência profissional ---------------------------------*/
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 9.375rem 4rem 9.375rem;
+}
+
+.projetos__titulo {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.projetos__conteiner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.projetos__nome {
+    font-size: 1.375rem;
+}
+
+.projetos__descricao {
+    font-size: 1rem;
+}
+
+.projetos__conteiner__botao {
+    border: 2px solid var(--cor-botao);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.repo {
+    color: var(--cor-botao);
+}
+
+.demo {
+    background-color: var(--cor-botao);
+    color: var(--cor-de-fundo_destaque);
+}
+
+.projetos__imagem {
+    max-width: 772px;
+    max-height: 426px;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px gray;
+}
 
 /*------------------------------ Seção de Contato ---------------------------------*/
 
+.contato {
+    background-color: var(--cor-de-fundo_destaque);
+    padding: 4rem 9.375rem;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.contato_img {
+    max-width: 300px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+}
+
+.contato__titulo {
+    font-size: 2rem;
+}
+
+.contato__botao {
+    border: 2px solid var(--cor-botao);
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: var(--cor-botao);
+    color: var(--cor-de-fundo_destaque);
+}
 
 /* ------------------------------ Responsividade ---------------------------------------*/
+
+.footer {
+    text-align: center;
+}
 
 /* Tablets e telas maiores */
 @media (min-width: 768px) {
