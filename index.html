@@ -13,8 +13,10 @@
 
 <body>
     <header class="cabecalho">
-        <img class="cabecalho__logo" src="assets/vector.png" alt="Logo">
-        <h1 class="cabecalho__titulo">Lanusse Silveira</h1>
+        <div class="cabecalho__nome">
+            <img class="cabecalho__logo" src="assets/vector.png" alt="Logo">
+            <h1 class="cabecalho__titulo">Lanusse Silveira</h1>
+        </div>
         <nav class="navegacao">
             <ul class="navegacao__lista">
                 <li class="navegacao__elemento"><a href="#sobre-mim">Sobre mim</a></li>
@@ -22,7 +24,7 @@
                 <li class="navegacao__elemento"><a href="#hobbies">Hobbies</a></li>
                 <li class="navegacao__elemento"><a href="#formacao">Formação</a></li>
                 <li class="navegacao__elemento"><a href="#projetos">Projetos</a></li>
-                <li class="navegacao__elemento"><a href="#contato">Contato</a></li>
+                <li class="navegacao__elemento navegacao__elemento__contato"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -130,13 +132,13 @@
             </div>
         </div>
         <div class="projetos__conteiner">
+            <img class="projetos__imagem" src="./assets/projeto_jogonumsecreto.png" alt="Projeto Jogo do número secreto">
             <div class="projetos__conteiner__texto">
                 <h3 class="projetos__nome">Jogo do número secreto</h3>
                 <p class="projetos__descricao">Projeto desenvolvido no curso de Lógica de programação da Alura desenvolvido no Bootcamp da Origamid utilizando HTML5, CSS e Javascript. </p>
                 <a class="projetos__conteiner__botao repo" href="https://github.com/lanussehelena/jogo-do-numero-secreto">Repositório</a>
                 <a class="projetos__conteiner__botao demo" href="">Ver demo</a>
             </div>
-            <img class="projetos__imagem" src="./assets/projeto_jogonumsecreto.png" alt="Projeto Jogo do número secreto">
         </div>
         <div class="projetos__conteiner">
             <img class="projetos__imagem" src="./assets/projeto_encriptador.png" alt="Projeto decodificador">
