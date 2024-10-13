@@ -1,4 +1,3 @@
-/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
 :root {
     --cor-de-fundo: #F5F5F5;
     --cor-de-fundo-menu: #ffffff;
@@ -27,7 +26,6 @@ a {
     color: var(--cor-do-link);
 }
 
-/* ------------------------------ Seção Menu -------------------------------*/
 .cabecalho {
     display: flex;
     flex-direction: column;
@@ -38,7 +36,7 @@ a {
 }
 
 .cabecalho__logo {
-    max-width: 80px; /* Ajuste para telas pequenas */
+    max-width: 80px; 
 }
 
 .cabecalho__titulo {
@@ -53,7 +51,6 @@ a {
 .navegacao__elemento a {
     font-size: 0.9rem;
 }
-/* ------------------------------ Seção Apresentação ------------------------------*/
 
 .apresentacao {
     display: flex;
@@ -85,8 +82,6 @@ a {
     border-radius: 50%;
 }
 
-/* ------------------------------ Seção Sobre mim ----------------------------------*/
-
 .sobre-mim {
     background-color: var(--cor-de-fundo_destaque);
     padding: 3.75rem 9.375rem;
@@ -100,7 +95,6 @@ a {
     font-size: 1rem;
 }
 
-/*------------------------------ Seção de Habilidades  e  Seção de Hobbies------------------------------*/
 .habilidades, .hobbies {
     padding: 1rem 9.375rem 2rem 9.375rem;
 }
@@ -128,8 +122,6 @@ a {
     font-size: 1rem;
 }
 
-/*------------------------------ Formação acadêmica --------------------------------*/
-
 .formacao {
     background-color: var(--cor-de-fundo_destaque);
     padding: 5.125rem 9.375rem;
@@ -156,8 +148,6 @@ a {
     font-size: 1rem;
     margin: 0;
 }
-
-/*------------------------------ Seção de Experiência profissional ---------------------------------*/
 
 .projetos {
     display: flex;
@@ -209,8 +199,6 @@ a {
     box-shadow: 5px 5px 15px gray;
 }
 
-/*------------------------------ Seção de Contato ---------------------------------*/
-
 .contato {
     background-color: var(--cor-de-fundo_destaque);
     padding: 4rem 9.375rem;
@@ -219,12 +207,24 @@ a {
     align-items: center;
 }
 
-.contato_img {
-    max-width: 300px;
-    max-height: 400px;
+.contato__container p {
+    margin: 0;
+}
+
+.contato__container p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.contato__img {
     width: auto;
     height: auto;
     border-radius: 4px;
+}
+
+.contato__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .contato__titulo {
@@ -237,15 +237,77 @@ a {
     border-radius: 4px;
     background-color: var(--cor-botao);
     color: var(--cor-de-fundo_destaque);
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-/* ------------------------------ Responsividade ---------------------------------------*/
+.contato__botao:hover {
+    background-color: #0767e6;
+}
+
+.contato__formulario__item {
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--cor-de-fundo);
+    border-radius: 5px;
+    background-color: var(--cor-de-fundo);
+    transition: border-color 0.3s;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+    color: transparent;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: var(--cor-botao);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-bottom: 2px solid var(--cor-botao);
+}
+
+label {
+    margin-bottom: 5px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: var(--cor-texto);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+input:focus + label, textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+    top: -15px;
+    left: 10px;
+    font-size: 0.75rem;
+    color: var(--cor-botao);
+}
+
+input:not(:focus):not(:placeholder-shown) + label,
+textarea:not(:focus):not(:placeholder-shown) + label {
+    color: var(--cor-texto);
+}
 
 .footer {
     text-align: center;
 }
 
-/* Tablets e telas maiores */
 @media (min-width: 768px) {
     .cabecalho {
         flex-direction: row;
@@ -273,9 +335,7 @@ a {
     }
 }
 
-/* Telas grandes */
 @media (min-width: 1024px) {
-    /* Aqui você pode ajustar ainda mais o design para telas grandes */
     .cabecalho__titulo {
         font-size: 1.8rem;
     }

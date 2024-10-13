@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fonte do Projeto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Portfólio - Lanusse Silveira</title>
 </head>
 
 <body>
-    <!-- Menu -->
     <header class="cabecalho">
         <img class="cabecalho__logo" src="assets/vector.png" alt="Logo">
         <h1 class="cabecalho__titulo">Lanusse Silveira</h1>
@@ -29,7 +27,6 @@
         </nav>
     </header>
 
-    <!-- Seção de Apresentação -->
     <section class="apresentacao">
         <div class="apresentacao__conteiner">
             <h2 class="apresentacao__titulo">Olá, meu nome é Lanusse Silveira e sou Desenvolvedora Frontend</h2>
@@ -44,14 +41,12 @@
         <img class="apresentacao__foto" src="assets/profile.jpg" alt="Foto de perfil">
     </section>
 
-    <!-- Seção sobre mim -->
     <section class="sobre-mim" id="sobre-mim">
         <h2 class="sobre-mim__titulo">Sobre mim</h2>
         <p class="sobre-mim__texto">Com vasta experiencia atuando em várias empresas na área de Design de Interiores, tenho desenvolvido minhas skills para atuar como Desenvolvedora Fontend. Por isso, tenho focado meu desenvolvimento profissional em Frontend.</p>
         <p class="sobre-mim__texto">Hoje minha maior motivação como estudante de Frontend, é conseguir desevolver um trabalho nessa área e contribuir em equipe. Tive contato com a tecnologia através dos softwares que eu utilizava para desenvolver os projetos de interiores e apartir dessa curiosidade passei a fazer cursos online e desde então decidi me dedicar a fazer a minha transição de carreira aliando as experiências anteriores para me destacar na área da tecnologia.</p>
     </section>
 
-    <!-- Seção de Habilidades -->
     <section class="habilidades" id="habilidades">
         <h2 class="habilidades__titulo">Habilidades</h2>
         <ul class="habilidades__lista">
@@ -74,7 +69,6 @@
         </ul>
     </section>
 
-    <!-- Seção de Hobbies -->
     <section class="hobbies" id="hobbies">
         <h2 class="hobbies__titulo">Hobbies</h2>
         <ul class="hobbies__lista">
@@ -97,7 +91,6 @@
         </ul>
     </section>
 
-    <!-- Seção de Formação Acadêmica -->
     <section class="formacao" id="formacao">
         <h2 class="formacao__titulo">Formação Acadêmica</h2>
         <ul class="formacao__lista">
@@ -125,7 +118,6 @@
         </ul>
     </section>
 
-    <!-- Seção de Projetos -->
     <section class="projetos" id="projetos">
         <h2 class="projetos__titulo">Experiência Profissional</h2>
         <div class="projetos__conteiner">
@@ -154,21 +146,42 @@
                 <a class="projetos__conteiner__botao repo" href="https://github.com/lanussehelena/decodificador-de-texto">Repositório</a>
                 <a class="projetos__conteiner__botao demo" href="https://decodificador-de-texto-j3gmo3u6c-lanussehelenas-projects.vercel.app/">Ver demo</a>
             </div>
-        </div>
-        
+        </div>  
     </section>
 
-    <!-- Seção de Contato -->
     <section class="contato" id="contato">
-        <img class="contato_img" src="./assets/contact_image.png" alt="">
-        <div>
+        <img class="contato__img" src="./assets/contact_image.png" alt="Imagem de Contato">
+        <div class="contato__container">
             <h2 class="contato__titulo">Contato</h2>
-            <a class="contato__botao" href="mailto:lanusse.dev@gmail.com">E-mail</a>
-            <a class="contato__botao" href="https://wa.me/5583996018572">Whatsapp</a>
+            <p>Quer entrar em contato comigo?</p>
+            <p>Preencha o formulário e eu entrarei em contato o mais rápido possível. </p>
+            <form class="contato__formulario">
+                <div class="contato__formulario__item">
+                    <input class="contato__campo" type="text" id="nome" placeholder="Nome">
+                    <label for="nome">Nome:</label>
+                </div>
+                <div class="contato__formulario__item">
+                    <input class="contato__campo" type="email" id="email" placeholder="E-mail">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="contato__formulario__item">
+                    <input class="contato__campo" type="text" id="assunto" placeholder="Assunto">
+                    <label for="assunto">Assunto:</label>
+                </div>
+                <div class="contato__formulario__item">
+                    <textarea class="contato__campo contato__campo--textarea" placeholder="Mensagem"></textarea>
+                    <label for="mensagem">Mensagem:</label>
+                </div>
+                <button class="contato__botao contato__botao--enviar" type="submit">Enviar mensagem</button>
+            </form>
+            <h3>Se preferir o contato direto:</h3>
+            <div>
+                <a class="contato__botao" href="mailto:lanusse.dev@gmail.com">E-mail</a>
+                <a class="contato__botao" href="https://wa.me/5583996018572">Whatsapp</a>
+            </div>
         </div>
-        </form>
     </section>
-
+    
     <footer>
         <p class="footer">Desenvolvido por Lanusse Silveira em 2024.</p>
     </footer>
